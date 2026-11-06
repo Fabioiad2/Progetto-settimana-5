@@ -87,38 +87,15 @@ body{
   align-items: center;
 }
 
-@media screen and (min-width:768px) {
-  
-  .row{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    .card{
-    width: 50%;
-  }
-  }
-}
 
-
-
-@media screen and (min-width:990px) {
-  main {max-width: 990px;
-  margin: 0 auto;}
-
-  .row{
-    flex-direction: row;
-    .card{
-    width: 33%;
-    
-  }
-  }
-}
 
 .services, .ourTeam{
   /* display: flex;
   justify-content: center; */
   text-align: center;
 }
+
+
 
 .imgPlaceholder{
   display: flex;
@@ -154,4 +131,54 @@ main{
     margin-bottom: 0px;
   }
   p{margin: 0px;}
+}
+
+#site-footer{
+  background-color: #121212;
+}
+
+.social{
+  border-radius: 50%;
+  background-color: rgb(57, 56, 56);
+}
+
+.footerRow{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+@media screen and (min-width:768px) {
+  
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+    width: 50%;
+  }
+
+  .footerRow{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  }
+}
+
+
+
+@media screen and (min-width:990px) {
+  main {max-width: 990px;
+  margin: 0 auto;}
+
+  .row{
+    flex-direction: row;
+    .card{
+    width: 33%;
+    
+  }
+  }
 }
