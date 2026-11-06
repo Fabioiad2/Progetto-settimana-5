@@ -49,11 +49,16 @@ a {
 }
 
 body{
-  color: #fafafa;
+  color: hsl(150, 60%, 30%);
 }
 
 .col-sm-5{
   width: 15%;
+}
+
+.col-sm-5:last-child{
+  border: 1px solid black;
+  border-radius: 999px;
 }
 
 .col-12{
@@ -67,6 +72,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fafafa;
 }
 
 .cta{
@@ -75,8 +81,77 @@ body{
   width: 30%;
 }
 
+.row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width:768px) {
+  
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+    width: 50%;
+  }
+  }
+}
+
+
 
 @media screen and (min-width:990px) {
   main {max-width: 990px;
   margin: 0 auto;}
+
+  .row{
+    flex-direction: row;
+    .card{
+    width: 33%;
+    
+  }
+  }
+}
+
+.services, .ourTeam{
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+
+.imgPlaceholder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(150, 60%, 30%);
+  width: 80px;
+  height: 80px;
+  color: #fafafa;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 5px solid rgb(177, 255, 209);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+main{
+  padding: 15px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  border: 0.1px solid rgb(255, 0, 0);
+  justify-content: center;
+  
+  border-radius: 10px;
+  i{
+    font-size: 2rem;
+  }
+  h4,h5{
+    margin-bottom: 0px;
+  }
+  p{margin: 0px;}
 }
