@@ -112,7 +112,21 @@ body{
   /* display: flex;
   justify-content: center; */
   text-align: center;
+  animation: visusalizzazioneRitardata 1000ms;
 }
+
+@keyframes visusalizzazioneRitardata{
+  0%{opacity: 0;}
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
 .services, .ourTeam{
   margin-top: 100px;
 }
@@ -165,6 +179,7 @@ main{
 }
 
 .social{
+  transition: 200ms;
   width: 29%;
   display: flex;
   justify-content: center;
@@ -224,10 +239,12 @@ li:hover{
   background-color: rgb(234, 234, 234);
 }
 
-.card:hover{
+.card:hover, .social:hover{
   transform: translateY(-5px);
 }
-
+.item:hover{
+  background-color: hsl(150, 60%, 30%);
+}
 
 
 
