@@ -120,7 +120,7 @@ main{
   display: flex;
   flex-direction: column;
   margin: 0px;
-  border: 0.1px solid rgb(255, 0, 0);
+  border: 0.1px solid rgb(0, 0, 0);
   justify-content: center;
   
   border-radius: 10px;
@@ -193,7 +193,18 @@ main{
 }
 }
 
+.darkmode{
+  background-color: #121212;
+  color: white;
+}
+.cardDark{
+  background-color: #1f1f1f;
 
+}
+
+.heroTitle{
+  font-size: 3rem;
+}
 
 @media screen and (min-width:990px) {
   main {max-width: 990px;
