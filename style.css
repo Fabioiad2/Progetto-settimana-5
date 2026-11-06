@@ -7,6 +7,8 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -106,15 +108,15 @@ body{
 
 
 
-.services, .ourTeam{
+.services, .ourTeam, .lavori{
   /* display: flex;
   justify-content: center; */
   text-align: center;
 }
-
-.ourTeam{
+.services, .ourTeam{
   margin-top: 100px;
 }
+
 
 .whiteList{
   color: white !important;
@@ -199,39 +201,7 @@ main{
 
 
 
-@media screen and (min-width:768px) {
 
-  nav{
-    .col-6{
-      width: 45%;
-    }
-    ul{
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-  }
-  
-  .row{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    .card{
-    width: 45%;
-    margin-inline: 8px;
-    margin-top: 15px;
-    
-  }
-}
-.footerRow{
-  flex-direction: row;
-  justify-content: space-between;
-}
-.col-3{
-  width: 30%;
-}
-
-}
 
 .darkmode{
   background-color: #121212;
@@ -257,6 +227,100 @@ li:hover{
 .card:hover{
   transform: translateY(-5px);
 }
+
+.cardLavori{
+  display: flex;
+}
+
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 22px;
+    background-color: rgb(234, 234, 234);
+}
+
+.col-image{
+  width: 45%;
+}
+
+.left, .right{
+  width: 45%;
+}
+.containerImg{
+  background-color: black;
+  height: 100%;
+  img{
+    height: 100%;
+  }
+}
+.rowProfile{
+  display: flex;
+  justify-content: start;
+}
+.smallImageProfile{
+ width: 50px;
+ height: 50px;
+ border-radius: 25px;
+ background-color: black;
+}
+.description{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  height: 200px;
+}
+.interaction, .comment{
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  justify-content: space-between;
+}
+.cardLavori{
+  width: 100%;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+
+  nav{
+    .col-6{
+      width: 45%;
+    }
+    ul{
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+   
+  }
+  
+  .row{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card{
+    width: 45%;
+    margin-inline: 8px;
+    margin-top: 15px;
+    
+  }
+}
+.footerRow{
+  flex-direction: row;
+  justify-content: space-between;
+}
+.col-3{
+  width: 30%;
+}
+
+ .cardLavori{
+      width: 50%;
+    }
+}
+
 
 @media screen and (min-width:990px) {
   main {max-width: 990px;
