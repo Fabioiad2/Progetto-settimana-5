@@ -27,3 +27,56 @@ a {
 
 
 /* Aggiungi qui le tue regole, mobile-first. */
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  background-color: #fafafa;
+ 
+  ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+      flex-wrap: wrap;
+      li{
+        list-style: none;
+        text-align: center;
+        color: hsl(150, 60%, 30%);
+      }
+  }
+}
+
+body{
+  color: #fafafa;
+}
+
+.col-sm-5{
+  width: 15%;
+}
+
+.col-12{
+  width: 100%;
+}
+
+.hero{
+  min-height: 70vh;
+  background-color: hsl(150, 60%, 30%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta{
+  border-radius: 999px;
+  padding: 9px;
+  width: 30%;
+}
+
+
+@media screen and (min-width:990px) {
+  main {max-width: 990px;
+  margin: 0 auto;}
+}
