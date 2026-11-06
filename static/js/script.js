@@ -7,6 +7,9 @@ const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const card = document.querySelectorAll('.card')
 const li = document.querySelectorAll('li')
+const cta = document.querySelector('.cta')
+const overflow = document.querySelector('.overflow')
+const modal = document.querySelector('.modal')
 console.log(card)
 darkmode.addEventListener('click',()=>{
     console.log('cliccato')
@@ -24,4 +27,15 @@ darkmode.addEventListener('click',()=>{
 
 document.addEventListener('scrollend',()=>{
     console.log('scrollo')
+})
+
+cta.addEventListener('click',()=>{
+  overflow.classList.remove('invisible')
+})
+
+overflow.addEventListener('click',(e)=>{
+  console.log(e.target)
+  if(e.target === modal){
+    overflow.classList.add('invisible')
+  }
 })
