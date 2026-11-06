@@ -21,3 +21,7 @@ darkmode.addEventListener('click',()=>{
   })
    
 })
+
+document.addEventListener('scrollend',()=>{
+    console.log('scrollo')
+})

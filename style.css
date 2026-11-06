@@ -34,6 +34,7 @@ a {
   justify-content: center;
   width: 100%;
 
+
   background-color: #fafafa;
  
   ul{
@@ -48,6 +49,21 @@ a {
       }
   }
 }
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ul{
+  justify-content: space-between;
+}
+.col-6{
+  display: flex;
+  width: 100%;
+ gap: 20px;
+  justify-content: center;
+  }
 
 body{
   color: hsl(150, 60%, 30%);
@@ -183,6 +199,17 @@ main{
 
 
 @media screen and (min-width:768px) {
+
+  nav{
+    .col-6{
+      width: 45%;
+    }
+    ul{
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
   
   .row{
     flex-direction: row;
