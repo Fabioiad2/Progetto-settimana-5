@@ -43,6 +43,7 @@ a {
     justify-content: center;
       flex-wrap: wrap;
       li{
+        padding: 5px;
         list-style: none;
         text-align: center;
         color: hsl(150, 60%, 30%);
@@ -69,11 +70,10 @@ body{
   color: hsl(150, 60%, 30%);
 }
 
-.col-sm-5{
-  width: 15%;
-}
 
-.col-sm-5:last-child{
+
+#darkmode{
+  width: 40px;
   border: 1px solid black;
   border-radius: 999px;
 }
@@ -141,6 +141,7 @@ main{
 }
 
 .card{
+  transition: 100ms;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -247,6 +248,14 @@ main{
 h1{
   color: hsl(150, 60%, 30%);
   
+}
+
+li:hover{
+  background-color: rgb(234, 234, 234);
+}
+
+.card:hover{
+  transform: translateY(-5px);
 }
 
 @media screen and (min-width:990px) {
