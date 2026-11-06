@@ -10,6 +10,7 @@ const li = document.querySelectorAll('li')
 const cta = document.querySelector('.cta')
 const overflow = document.querySelector('.overflow')
 const modal = document.querySelector('.modal')
+const closeModal = document.querySelector('.closeModal')
 console.log(card)
 darkmode.addEventListener('click',()=>{
     console.log('cliccato')
@@ -38,4 +39,7 @@ overflow.addEventListener('click',(e)=>{
   if(e.target === modal){
     overflow.classList.add('invisible')
   }
+})
+closeModal.addEventListener('click',()=>{
+   overflow.classList.add('invisible')
 })
