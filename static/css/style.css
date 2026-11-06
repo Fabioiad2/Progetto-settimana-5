@@ -228,57 +228,9 @@ li:hover{
   transform: translateY(-5px);
 }
 
-.cardLavori{
-  display: flex;
-}
 
-.cardContent{
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  padding: 22px;
-    background-color: rgb(234, 234, 234);
-}
 
-.col-image{
-  width: 45%;
-}
 
-.left, .right{
-  width: 45%;
-}
-.containerImg{
-  background-color: black;
-  height: 100%;
-  img{
-    height: 100%;
-  }
-}
-.rowProfile{
-  display: flex;
-  justify-content: start;
-}
-.smallImageProfile{
- width: 50px;
- height: 50px;
- border-radius: 25px;
- background-color: black;
-}
-.description{
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-  height: 200px;
-}
-.interaction, .comment{
-  display: flex;
-  justify-content: start;
-  text-align: start;
-  justify-content: space-between;
-}
-.cardLavori{
-  width: 100%;
-}
 
 
 
