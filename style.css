@@ -13,6 +13,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #1a1a1a;
+  background-color: #fafafa;
 }
 
 img {
@@ -95,6 +96,13 @@ body{
   text-align: center;
 }
 
+.ourTeam{
+  margin-top: 100px;
+}
+
+.whiteList{
+  color: white !important;
+}
 
 
 .imgPlaceholder{
@@ -117,12 +125,12 @@ main{
 }
 
 .card{
+  background-color: white;
   display: flex;
   flex-direction: column;
   margin: 0px;
-  border: 0.1px solid rgb(0, 0, 0);
   justify-content: center;
-  
+  padding: 10px;
   border-radius: 10px;
   i{
     font-size: 2rem;
@@ -181,7 +189,10 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     .card{
-    width: 50%;
+    width: 45%;
+    margin-inline: 8px;
+    margin-top: 15px;
+    
   }
 }
 .footerRow{
@@ -191,6 +202,7 @@ main{
 .col-3{
   width: 30%;
 }
+
 }
 
 .darkmode{
@@ -205,6 +217,10 @@ main{
 .heroTitle{
   font-size: 3rem;
 }
+h1{
+  color: hsl(150, 60%, 30%);
+  
+}
 
 @media screen and (min-width:990px) {
   main {max-width: 990px;
@@ -213,7 +229,7 @@ main{
   .row{
     flex-direction: row;
     .card{
-    width: 33%;
+    width: 29%;
     
   }
   }

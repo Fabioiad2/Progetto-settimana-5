@@ -6,6 +6,7 @@ const darkmode = document.querySelector('#darkmode')
 const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const card = document.querySelectorAll('.card')
+const li = document.querySelectorAll('li')
 console.log(card)
 darkmode.addEventListener('click',()=>{
     console.log('cliccato')
@@ -15,4 +16,8 @@ darkmode.addEventListener('click',()=>{
             c.classList.toggle('cardDark')
 
     })
+  li.forEach(l=>{
+    l.classList.toggle('whiteList')
+  })
+   
 })
